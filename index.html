@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Storefront</title>
-    <link rel="stylesheet" ref="text/css" href="main.css" </head> <body>
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" ref="text/css" href="index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-brown.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+
+<body>
 
     <!--REQUIREMENTS: 
         B): <header>, <nav>, <section>, <a>, <footer>, <article>, <sidebar> 
@@ -25,27 +33,99 @@
                 - Conditionals
      -->
 
-    <!-- NAVBAR -->
-    <section id="navbar">
-    <nav>
-        <ul>
-            <li class="ancestor"><a class="descendant" href="#home">Home</a></li>
-            <li class="ancestor"><a class="descendant" href="#news">News</a></li>
-            <li class="ancestor"><a class="descendant" href="#contact">Contact</a></li>
-            <li class="ancestor"><a class="descendant" href="#about">About</a></li>
-        </ul>
-    </nav>
-</section>
 
-    <!-- HEADER -->
-    <section id="header"></section>
+    <div class="mybody-grid-container">
+        <!-- HEADER -->
+        <div class="myheader w3-theme-d2">
+            <p class="animated duration-2s fadeInUp delay-2s"><span id="stingrayHeader">ShurTutor</span><br>
+                <span id="subheader">presents<br></span>
+                <span id="javaheader">Java</span><span id="javascript">Script</span>
+            </p>
+        </div>
+        <div class="mynavbar">
+            <section id="navbar">
+                <nav id="home">
+                    <div class="mynav-grid-container">
+                        <div class="nav1 w3-theme-d5"><a class="navlink" href="#home">Home</a></div>
+                        <div class="nav2 w3-theme-d5"><a class="navlink" href="#functions">Functions</a></div>
+                        <div class="nav3 w3-theme-d5"><a class="navlink" href="#objects">Objects</a></div>
+                        <div class="nav4 w3-theme-d5"><a class="navlink" href="#arrays">Arrays</a></div>
+                        <div class="nav5 w3-theme-d5"><a class="navlink" href="#forloops">For Loops</a></div>
+                        <div class="nav6 w3-theme-d5"><a class="navlink" href="#conditionals">Conditionals</a></div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <div class="mymain">
+            <article id="functions" name="functions">
+                <h1 class="topictitle w3-text-theme">Functions</h1>
+                <div class="topictext w3-theme-l4">
+                <p>Functions allow you to organize and repeat tasks that are used often. They are also
+                    useful when it comes to code reuse.
+                    Here are two examples of ways to define functions in your code:
+                    <ul>
+                        <li>Older way:<br>
+                            var myFuncton = function functionName (arguments, commaDelimited) {<br>
+                                /* The code you want to run goes here */<br>
+                            }<br>
+                        </li>
+                        <li>ES6 way (aka fat arrow):<br>
+                            const myFunction = (arguments, commaDelimited) => { /* Your code goes here */ };
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            </article>
+            <article id="objects" name="objects">
+                <h1 class="topictitle w3-text-theme">Objects</h1>
+                <p class="topictext w3-theme-l4">Objects in JavaScript are simply a way to organize data of any kind and 
+                    put it into a container. The data is usually organized into name value pairs (ex: dogBreed: "Cattle Dog").<br>
+                    <br>
+                    An object may also have methods which are essentialy functions that allow you to retrieve or manipulate information
+                    related to the object.
+                </p>
+            </article>
+            <article id="arrays" name="arrays">
+                <h1 class="topictitle w3-text-theme">Arrays</h1>
+                <p class="topictext w3-theme-l4">Arrays are essentially a list of items. Each item or element on the list can be of any data type including 
+                    other arrays and even complex objects. Arrays are defined using brackets as opposed to objects which are defined using braces.<br>
+                    let myArray = [element1, element2];
+                </p>
+            </article>
+            <article id="forloops" name="forloops">
+                <h1 class="topictitle w3-text-theme">For Loops</h1>
+                <p class="topictext w3-theme-l4">For loops allow you to repeat a set of task for a defined set of iterations. The most basic for loops uses the following syntax:<br>
+                for (let i=0; i &lt; 10; i++) {<br>
+                    /* Your Code to be repeated goes here */<br>
+                }<br>
+                The loop above will repeat 10 times. The counter(i) starts at 0, and keeps incrementing by 1(i++) until it equals 10 then it stops.<br><br>
+                There is also a for/in loop which will loops through the properties of an object and a for/of loop which was new in ES6 and allows you to iterate
+                through the items in an object.
 
-    <!-- MAIN CONTENT-->
-    <section id="mainContent"></section>
+            </p>
+            </article>
+            <article id="conditionals" name="conditionals">
+                <h1 class="topictitle w3-text-theme">Conditionals</h1>
+                <p class="topictext w3-theme-l4">Conditionals control behavior in JavaScript and determine whether or not pieces of code can run. The most basic
+                    is the if statement (if (condition is true {do this})). The if statement can also be followed by one or more else statements that will be executed
+                    if the initial if fails. There is also a switch statement which is just a more concise way of writing multiple if-else-if-elses.
+                </p>
+            </article>
+        </div>
+        <div class="myhints">
+            <h1>Additional Info</h1>
+            <p><a class="moreinfo" href="https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/" target="_blank">Lastest JS Changes</a></p>
+            <p><a class="moreinfo" href="https://www.w3schools.com/js/default.asp" target="_blank">W3 Info</a></p>
+        </div>
+        <div class="myfooter">
+            <section id="footer">
+                <p class="w3-theme-d5">
+                    &copy; 2019 ShurMedia Inc.
+                </p>
+            </section>
+        </div>
+    </div>
 
-    <!-- FOOTER -->
-    <section id="footer"></section>
-
-    </body>
+</body>
 
 </html>

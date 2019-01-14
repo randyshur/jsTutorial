@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: stingray;
+    src: url(stingray.ttf);
+  }
+/* Main Layout */
+.myheader { grid-area: header; }
+.mynavbar { grid-area: navbar; }
+.mymain { grid-area: main; }
+.myhints { grid-area: hints; }
+.myfooter { grid-area: footer; }
+
+.nav1 { grid-area: nav1; }
+.nav2 { grid-area: nav2; }
+.nav3 { grid-area: nav3; }
+.nav4 { grid-area: nav4; }
+.nav5 { grid-area: nav5; }
+.nav6 { grid-area: nav6; }
+
+.mybody-grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header '
+      'navbar navbar navbar navbar'
+      'main main main hints'
+      'footer footer footer footer';
+    grid-gap: 0px 0px 0px 0px;
+  }
+.mybody-grid-container > div {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  .mynav-grid-container {
+    display: grid;
+    grid-template-areas:
+      'nav1 nav2 nav3 nav4 nav5 nav6';
+    grid-gap: 10px 0px 0px 0px;
+    padding: 0px;
+  }
+  .mynav-grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0px 0;
+    font-size: 30px;
+  }
+  .mynav-grid-container > div a:hover {
+    color: #fff !important;
+    background-color: #b89588 !important;
+  }
+#stingrayHeader {
+    font-family: stingray;
+}
+#javaheader {
+    font-size: 4em;
+    font-stretch: expanded;
+}
+#javascript {
+    font: 400 5em/0.8 'Great Vibes', Helvetica, sans-serif;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+#footer {
+    font-family: stingray;
+    font-size: 12px;
+    width:100%;
+    bottom : 0;
+    height : 30px;
+    margin-top : 0px 0px 0px 0px;
+}
+.navlink {
+    font-size: 20px;
+    padding: 0px;
+    text-decoration: none;
+}
+article {
+    text-align: left;
+}
+.myhints {
+    border-radius: 25px;
+    background: #b89588;
+}
+.myhints > p a:hover{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    background: #3d2016;
+}
+.moreinfo {
+    text-decoration: none;
+  }
+.topictitle {
+    margin: 10px;
+}
+.topictext {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    height: 55px;
+    overflow: hidden;
+  }
+  li {
+      float: left;
+  }
+  li a{
+    display: block;
+    padding: 20px 16px,
+    text-decoration: none;
+    color: white;
+  }
+  li a:hover {
+      background-color: teal;
+  }
+  */
